@@ -50,7 +50,7 @@ function main() {
         catch (e) {
             alert(e);
         }
-        solicitud.open("GET", url, true);
+        solicitud.open("GET", url);
         solicitud.send();
         if (solicitud.status === 200){
             let miNodo = document.querySelector("main");
