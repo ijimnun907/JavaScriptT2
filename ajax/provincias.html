@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="provincias.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provincias y Municipios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select {
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <script src="provincias.js">
+
+    </script>
 </head>
 <body>
-    <form action="" method="post">
-        
-    </form>
+<h1>Seleccione una provincia y municipio</h1>
+<main>
+    <label for="provincias">Provincias:</label>
+    <select id="provincias">
+        <option value="">Cargando provincias...</option>
+    </select>
+
+    <label for="municipios">Municipios:</label>
+    <select id="municipios">
+        <option value="">Seleccione una provincia primero</option>
+    </select>
+</main>
 </body>
 </html>
