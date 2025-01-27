@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("#hideButton").click(() => {
+                $("p.intro").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<h1 class="intro">Pagina Ejercicio uno</h1>
+<p class="intro">Parrafo de ejemplo</p>
+<button id="hideButton">Ocultar todo</button>
+</body>
+</html>
