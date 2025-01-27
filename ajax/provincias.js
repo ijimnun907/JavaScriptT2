@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", main);
+let provinciasSelect;
+let municipiosSelect;
 
 function main() {
-    const provinciasSelect = document.getElementById("provincias");
-    const municipiosSelect = document.getElementById("municipios");
+    provinciasSelect = document.getElementById("provincias");
+    municipiosSelect = document.getElementById("municipios");
     provinciasSelect.addEventListener("change", (e) => {
         const provinciaId = e.target.value;
         if (provinciaId) {
