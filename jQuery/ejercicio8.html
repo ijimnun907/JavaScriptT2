@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("#blank").click(() => {
+                $("a[target='_blank']").hide();
+            });
+            $("#self").click(() => {
+                $("a[target='_self']").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button type="button" id="blank">Ocultar blank</button>
+    <button type="button" id="self">Ocultar self</button>
+    <a href="https://www.google.com" target="_blank">Otra ventana</a>
+    <a href="https://www.google.com" target="_self">Misma ventana</a>
+</body>
+</html>
