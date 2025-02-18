@@ -1,7 +1,9 @@
 <?php
+header('Content-Type: application/json');
 header ('Access-Control-Allow-Origin:*');
 
-$numero = $_REQUEST[numero];
+
+$numero = $_REQUEST['numero'];
 
 $municipios = array(
   array('id_municipio' => '1','id_provincia' => '1','cod_municipio' => '1','DC' => '4','nombre' => 'Alegría-Dulantzi'),
